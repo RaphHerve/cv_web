@@ -1,0 +1,120 @@
+@font-face {
+    font-family: Dancing_Script;
+    src: url("fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf");
+  }
+  
+  @font-face {
+    font-family: Roboto;
+    src: url("fonts/Roboto/Roboto-Medium.ttf");
+  }
+  
+  @font-face {
+    font-family: bogart;
+    src: url("fonts/bogart/Bogart-Black-trial.ttf");
+  }
+  
+  @font-face {
+    font-family: sora;
+    src: url("fonts/Sora/static/Sora-Light.ttf");
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+    background-color: #030124!important;
+    padding-top: 4%;
+    
+}
+
+.col-md-3{
+    padding-top: 5%;
+    padding-right: 8%!important;
+    font-size: smaller;
+}
+
+.name{
+    padding-bottom: 10%;
+    font-size: 3.5vw;
+}
+h1{
+    
+    padding-top: 4%;
+    padding-bottom: 2%;
+}
+
+.linkedin{
+    fill: #ffffff;
+}
+h2{
+    padding-bottom: 1%;
+    padding-top: 1%;
+}
+.container {
+    display: flex;
+}
+
+.left-sidebar {
+    width: 40%; /* 40% de la largeur de l'écran */
+    display: flex;
+    flex-direction: column;
+    color:#FFFFFF !important;
+    padding: 20px;
+    padding-left: 5%;
+
+    box-sizing: border-box;
+    position: fixed; /* Fixe la position */
+    height: 100vh; /* Hauteur de l'écran */
+}
+.right-content {
+    flex: 1; /* Les 2/3 restants */
+    overflow-y: auto; /* Permet le défilement vertical si le contenu est trop grand */
+    
+    box-sizing: border-box;
+    margin-left: 44%; /* Ajuste la marge pour éviter de cacher du contenu sous la partie gauche fixe */
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.right-content .container{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-right: 8%;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #ACACAF ; /* Set this to your desired default color */
+    transition: font-size 0.1s ease, font-weight 0.1s ease;
+
+    
+}
+.navbar-nav{
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+
+.nav-item.active .nav-link, .active .nav-link {
+    font-weight: bold; /* Rend le texte en gras */
+    font-size: larger; /* Rend le texte plus grand */
+    color:#FFFFFF !important;
+}
+
+.linkedin-link {
+    align-self: flex-start; /* Aligner à gauche */
+    margin-top: auto; /* Pousser en bas */
+}
+
+.bottom{
+    margin-bottom: 20%;
+}
+
+
+.right-content h1{
+    color:#ffffff!important;
+}
+
+.right-content {
+    color:#ACACAF;
+}
+

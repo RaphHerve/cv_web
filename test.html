@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="Raphael HERVE" />
+        <title>Raphaël HERVE</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="test.css" rel="stylesheet" />
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    </head>
+
+<body>
+
+    <div class="container">
+        <div class="left-sidebar">
+            <div class="sidebar-content">
+                <h1 class="fw-bolder name">Raphaël HERVE</h1>
+                <h5 >Engineer in embedded systems and project management</h5>
+                
+                
+                <nav class="navbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active"><a class="nav-link rounded" href="#profil">About</a></li>
+                        <li class="nav-item"><a class="nav-link rounded" href="#experiences">Experiences</a></li>
+                        <li class="nav-item"><a class="nav-link rounded" href="#education">Education</a></li>
+                    </ul>
+                </nav>
+            </div>
+          
+                    <a href="https://www.linkedin.com/in/raphaël-hervé-04b4b7150/" target="_blank" class="linkedin">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"  class="bi bi-linkedin" viewBox="0 0 16 16" >
+                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401m-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4"/>
+                        </svg>
+                        
+                    </a>
+
+        </div>
+        <div class="right-content">
+            <div class="container" id="profil">
+                <div class="row">
+                    
+                       <h5>I am an engineer in embedded electronics and project management. Currently on an International Volunteer in Business 
+                        (VIE) assignment in the USA and looking for a new experience starting in April 2024. <br/><br/>
+                        I'm looking for a position in project management related to IT or electronics, Data analysis or engineering in embedded system.
+                    
+                    </h5>
+
+                   
+                </div>
+            </div>
+
+            <div class="container" id="experiences">
+                <div class="row">
+                    <div class="col-md-3">
+                        10/2022 - Now
+                    </div>
+                    <div class="col-md-9">
+                        <h1>Business Analyst</h1>
+                        In charge of the IS department (200 employees across 2 plants)
+                        and the JIT system.<br/>
+                        Project leadership for the JIT system upgrade project, the MES (Manufacturing Execution System) implementation project 
+                        and various projects with the JIT system supplier.<br/>
+                        Oversight of the establishment of the network for a new plant with suppliers.<br/>
+                        Management of production line transfers from one plant to another.<br/>
+                        On-site IT support.
+                    </div>
+                    <div class="col-md-3">
+                        2021 - 2022
+                    </div>
+                    <div class="col-md-9">
+                    <h1>Project Manager Engineer </h1>
+                    Engineer Project Manager and Project Owner at the document management entity, 
+                    in the squad managing the electronic signature and the upload of documents.<br/>
+                    Responsible for implementing electronic signature for the group's flagship project.
+                
+
+                    </div>
+                    <div class="col-md-3">
+                        2018 - 2021
+                    </div>
+                    <div class="col-md-9">
+                    <h1>Apprentice Engineer</h1>
+
+                    For 2 years Engineering Management Group department, Web tools creation and databases.<br/>
+                    Third year in the material engineering department: Implementing a RISC-V Softcore IP in an FPGA.
+                    </div>
+                </div>
+
+              </div>
+              <div class="container" id="education">
+                <div class="row">
+
+                        <h1>Engineer in Mecanic and Electronics </h1>
+                            Embedded Systems option
+                        <h1>UIT Network and Telecommunications</h1>
+                        Continuing Education Option
+
+                   
+                </div>
+            
+              </div>
+              <div class="bottom"></div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const navItems = document.querySelectorAll('.nav-item');
+        
+            function onScroll() {
+                let currentSection = null;
+                const sections = document.querySelectorAll('.right-content > .container');
+                const scrolledFromTop = window.pageYOffset + window.innerHeight / 2;
+        
+                // Vérifier si l'utilisateur est en haut de la page
+                if (window.pageYOffset === 0) {
+                    currentSection = sections[0];
+                } else {
+                    sections.forEach(section => {
+                        const sectionTop = section.offsetTop;
+                        const sectionHeight = section.offsetHeight;
+        
+                        if (scrolledFromTop >= sectionTop && scrolledFromTop < sectionTop + sectionHeight) {
+                            currentSection = section;
+                        }
+                    });
+                }
+        
+                // Vérifier si l'utilisateur est en bas de la page
+                const bottomReached = window.innerHeight + window.pageYOffset >= document.body.offsetHeight;
+                if (bottomReached) {
+                    currentSection = sections[sections.length - 1];
+                }
+        
+                if (currentSection) {
+                    navItems.forEach(item => {
+                        item.classList.remove('active');
+                        const link = item.querySelector('a');
+                        if (link && link.getAttribute('href') === '#' + currentSection.getAttribute('id')) {
+                            item.classList.add('active');
+                        }
+                    });
+                }
+            }
+        
+            window.addEventListener('scroll', onScroll);
+            onScroll(); // Mise à jour initiale
+        });
+        </script>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+</body>
+<footer></footer>
+</html>
+
