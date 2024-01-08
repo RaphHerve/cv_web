@@ -28,11 +28,19 @@ body {
 }
 
 .col-md-3{
-    padding-top: 5%;
+    padding-top: 4%;
     padding-right: 8%!important;
     font-size: smaller;
+    
 }
 
+.col-md-9{
+    padding-bottom: 10%;
+  
+}
+h6{
+    font-size:0.9vw !important;
+}
 .name{
     padding-bottom: 10%;
     font-size: 3.5vw;
@@ -104,14 +112,46 @@ h2{
     align-self: flex-start; /* Aligner à gauche */
     margin-top: auto; /* Pousser en bas */
 }
+.logo_valeo{
+    width:80% !important;
+    padding-top: 45%;
+    
+ }
+ .logo_arkea{
+    width:80% !important;
+    padding-top: 20%;
+ }
+ .logo-thales{
+    width:80% !important;
+    padding-top: 20%;
+    filter: brightness(200%) contrast(150%);
+ }
+ .logo-ensta{
+    width:80% !important;
+    padding-top: 30%;
+
+ }
+ .logo-iut{
+    width:80% !important;
+    padding-top: 10%;
+    filter: brightness(400%) ;
+ }
 
 .bottom{
     margin-bottom: 20%;
 }
 
+.bouton {
+    background: transparent !important;
+    border-style: none;
+    padding: 1.5rem 2.3rem;
+    border-radius: 10rem;
 
+  }
 .right-content h1{
     color:#ffffff!important;
+    font-size:larger;
+ 
 }
 
 .right-content {
