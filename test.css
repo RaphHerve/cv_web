@@ -38,9 +38,22 @@ body {
     padding-bottom: 10%;
   
 }
+.highlight {
+    color: #ffffff; /* Replace #yourColor with your desired hex color code */
+    font-weight: bolder;
+}
+h4{
+    font-size:1.1vw !important;
+}
+h5{
+    font-size:1vw !important;
+    color: #BACB00;
+}
 h6{
     font-size:0.9vw !important;
+    
 }
+
 .name{
     padding-bottom: 10%;
     font-size: 3.5vw;
